@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/info_item_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:placeholderImage="@mipmap/ic_launcher"
+            app:failureImage="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            app:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/info_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/info_item_icon"/>
+
+        <TextView
+            android:id="@+id/info_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/info_item_icon"
+            android:layout_below="@id/info_item_name"
+            />
+
+        <TextView
+            android:id="@+id/info_item_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            />
+
+    <TextView
+        android:id="@+id/info_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/info_item_icon"
+        android:layout_below="@id/info_item_content"/>
+
+    <TextView
+        android:id="@+id/info_item_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/info_item_content"
+        />
+</RelativeLayout>

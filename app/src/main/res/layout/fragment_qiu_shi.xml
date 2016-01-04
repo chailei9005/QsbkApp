@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="chailei.com.qsbkapp.fragments.QiuShiFragment">
+<!--之前布局文件写成FrameLayout ,
+结果点击tabLayout  Fragment不切换，因为viewPager叠加到tabLayout上了-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="#000"
+        app:tabMode="fixed"
+        app:tabBackground="@color/colorPrimary"
+        app:tabIndicatorColor="#ffdd00"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="#ffd900"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
